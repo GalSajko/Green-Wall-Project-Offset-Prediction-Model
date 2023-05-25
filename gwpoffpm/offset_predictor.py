@@ -16,7 +16,7 @@ class OffsetPredictor:
         """runs the input through the neural network. performs some basic tests to ensure compatability.
 
         Args:
-            x (np.ndarray): numpy array of dimensions (batch_size, n_attributes) or (n_attributes, ) containing the data. The columns need to be sorted as follows:
+            x (np.ndarray): numpy array of dimensions (batch_size, n_attributes) or (n_attributes, ) containing the data. The columns need to be ordered as follows:
             'xA_before_0_x', 'xA_before_0_y', 'xA_before_0_z', 
             'xA_before_1_x', 'xA_before_1_y', 'xA_before_1_z', 
             'xA_before_2_x', 'xA_before_2_y', 'xA_before_2_z', 
