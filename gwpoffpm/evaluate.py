@@ -14,6 +14,8 @@ if __name__ == "__main__":
     test_dataset = SpiderDataset(INPUT_FILE_PATH, split="test")
     test_dataloader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False)
     
+    print(test_dataset.df.columns)
+    
     # load the model
     model = torch.load("model_v0.pth")
     model.eval()
