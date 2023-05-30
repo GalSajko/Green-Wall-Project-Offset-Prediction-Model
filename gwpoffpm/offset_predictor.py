@@ -58,4 +58,3 @@ class OffsetPredictor:
         if was_single_dim:
             offset = offset.reshape(-1)
         return offset
-        return offset
