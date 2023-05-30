@@ -33,6 +33,7 @@ class OffsetPredictor:
             Values are in the following order: x, y, z
         """
 
+        was_single_dim = False
         if len(x.shape) == 1:
             was_single_dim = True
             x = x.reshape(1, -1)
@@ -56,4 +57,5 @@ class OffsetPredictor:
         offset = offset.detach().cpu().numpy()
         if was_single_dim:
             offset = offset.reshape(-1)
+        return offset
         return offset
