@@ -4,3 +4,5 @@ Repository with prediction model for calculating correction offsets for pin-to-p
 The module contains code for OffsetPredictor class (see the example usage in the [sample.py](gwpoffpm/sample.py) file). For the sake of completeness we also provide training and evaluation code.
 
 The trained model can be downloaded from [here](https://1drv.ms/u/s!AiOQtuyfuo5UnOdaQwali85htwE09w?e=VNfLjW).
+
+Install with: pip install gwpoffpm.
